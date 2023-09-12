@@ -18,7 +18,7 @@ export default function AddTodo() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input className="  bg-neutral-600 font-semibold rounded-md"
+        <input className="  bg-neutral-600 font-semibold rounded-md text-center"
           type="text"
           placeholder="Enter Task..."
           value={title}
