@@ -13,7 +13,7 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
   };
   return (
     <div>
-      <input
+      <input className="  bg-red-700 font-semibold rounded-md"
         style={{ textDecoration: todo.completed && "line-through" }}
         type="text"
         value={todo.title === "" ? newTitle : todo.title}
@@ -33,8 +33,8 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
         >
           
         </button>
-        <button  onClick={() => handleDelete(todo.id)}>
-         
+        <button  className=" w-6 h-6 bg-white" onClick={() => handleDelete(todo.id)}>
+         <img src="" alt="" />
         </button>
       </div>
     </div>

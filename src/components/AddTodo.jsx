@@ -18,7 +18,7 @@ export default function AddTodo() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input
+        <input className="  bg-neutral-600 font-semibold rounded-md"
           type="text"
           placeholder="Enter Task..."
           value={title}
@@ -26,7 +26,7 @@ export default function AddTodo() {
         />
       </div>
       <div>
-        <button>Add</button>
+        <button className="  bg-sky-600 text-white w-10 rounded-sm m-3">Add</button>
       </div>
     </form>
   );

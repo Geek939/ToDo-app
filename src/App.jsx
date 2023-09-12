@@ -30,14 +30,17 @@ function App() {
     await deleteDoc(doc(db, "todos", id));
   };
   return (
-    <div>
+    <section className="  w-screen h-screen flex flex-col text-center justify-center bg-black">
       <div>
-        <h1>Task List</h1>
+        <h1 className=" text-4xl text-amber-500 font-bold font-serif">Task List</h1>
       </div>
-      <div>
+    
+   
+
+      <div className="">
         <AddTodo />
       </div>
-      <div>
+      <div className=" ">
         {todos.map((todo) => (
           <Todo
             key={todo.id}
@@ -48,7 +51,9 @@ function App() {
           />
         ))}
       </div>
-    </div>
+   
+     
+    </section>
   );
 }
 export default App;
